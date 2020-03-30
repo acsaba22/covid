@@ -13941,8 +13941,8 @@ NumDays:  67
 <div class="output_text output_subarea output_execute_result">
 <pre>China             33
 Canada            15
-France             9
 United Kingdom     9
+France             9
 Australia          8
 Netherlands        3
 Denmark            2
@@ -14505,7 +14505,7 @@ Name: country, dtype: int64</pre>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f2d0ccfc490&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f50f109afd0&gt;</pre>
 </div>
 
 </div>
@@ -14692,7 +14692,7 @@ Name: country, dtype: int64</pre>
     <span class="k">for</span> <span class="n">cfr</span> <span class="ow">in</span> <span class="n">cfrs</span><span class="p">:</span>
         <span class="n">backguess</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">cfr</span><span class="p">)</span><span class="o">*</span><span class="n">deaths</span>
         <span class="n">growth</span> <span class="o">=</span> <span class="p">(</span><span class="n">backguess</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">backguess</span><span class="p">[</span><span class="o">-</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">/</span> <span class="n">n</span>
-        <span class="n">daysToGo</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(((</span><span class="n">population</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="n">backguess</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">/</span> <span class="n">growth</span><span class="p">))</span>
+        <span class="n">daysToGo</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(((</span><span class="n">population</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="n">backguess</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">/</span> <span class="n">growth</span><span class="p">))</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CFR </span><span class="si">{:.2f}</span><span class="s2">% : </span><span class="si">{}</span><span class="s2"> [current </span><span class="si">{:.2f}</span><span class="s2">% ; growth </span><span class="si">{:.3f}</span><span class="s2">%; underreporting </span><span class="si">{:.0f}</span><span class="s2">x]&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
             <span class="mi">100</span><span class="o">*</span><span class="n">cfr</span><span class="p">,</span> <span class="n">daysToGo</span><span class="p">,</span> <span class="mi">100</span><span class="o">*</span><span class="n">backguess</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="n">population</span><span class="p">,</span> <span class="mi">100</span><span class="o">*</span> <span class="n">growth</span> <span class="o">/</span> <span class="n">population</span><span class="p">,</span> <span class="n">backguess</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="n">confirmed</span><span class="p">[</span><span class="o">-</span><span class="n">T</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
 </pre></div>
@@ -14725,10 +14725,10 @@ Name: country, dtype: int64</pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Guessing for  Korea, South  the days until half of population gets infected.
-CFR 2.00% : 39106 [current 0.01% ; growth 0.001%; underreporting 1x]
-CFR 1.00% : 19547 [current 0.03% ; growth 0.001%; underreporting 2x]
-CFR 0.50% : 9768 [current 0.06% ; growth 0.003%; underreporting 3x]
-CFR 0.20% : 3900 [current 0.14% ; growth 0.006%; underreporting 8x]
+CFR 2.00% : 78213 [current 0.01% ; growth 0.001%; underreporting 1x]
+CFR 1.00% : 39095 [current 0.03% ; growth 0.001%; underreporting 2x]
+CFR 0.50% : 19536 [current 0.06% ; growth 0.003%; underreporting 3x]
+CFR 0.20% : 7801 [current 0.14% ; growth 0.006%; underreporting 8x]
 </pre>
 </div>
 </div>
@@ -14838,10 +14838,10 @@ CFR 0.20% : 3900 [current 0.14% ; growth 0.006%; underreporting 8x]
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Guessing for  Italy  the days until half of population gets infected.
-CFR 2.00% : 376 [current 0.83% ; growth 0.065%; underreporting 12x]
-CFR 1.00% : 185 [current 1.66% ; growth 0.131%; underreporting 24x]
-CFR 0.50% : 89 [current 3.32% ; growth 0.261%; underreporting 49x]
-CFR 0.20% : 31 [current 8.29% ; growth 0.653%; underreporting 122x]
+CFR 2.00% : 753 [current 0.83% ; growth 0.065%; underreporting 12x]
+CFR 1.00% : 370 [current 1.66% ; growth 0.131%; underreporting 24x]
+CFR 0.50% : 178 [current 3.32% ; growth 0.261%; underreporting 49x]
+CFR 0.20% : 63 [current 8.29% ; growth 0.653%; underreporting 122x]
 </pre>
 </div>
 </div>
@@ -14951,10 +14951,10 @@ CFR 0.20% : 31 [current 8.29% ; growth 0.653%; underreporting 122x]
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Guessing for  Spain  the days until half of population gets infected.
-CFR 2.00% : 314 [current 0.64% ; growth 0.079%; underreporting 17x]
-CFR 1.00% : 155 [current 1.28% ; growth 0.157%; underreporting 33x]
-CFR 0.50% : 75 [current 2.56% ; growth 0.314%; underreporting 67x]
-CFR 0.20% : 27 [current 6.40% ; growth 0.786%; underreporting 167x]
+CFR 2.00% : 628 [current 0.64% ; growth 0.079%; underreporting 17x]
+CFR 1.00% : 310 [current 1.28% ; growth 0.157%; underreporting 33x]
+CFR 0.50% : 150 [current 2.56% ; growth 0.314%; underreporting 67x]
+CFR 0.20% : 55 [current 6.40% ; growth 0.786%; underreporting 167x]
 </pre>
 </div>
 </div>
@@ -15063,10 +15063,10 @@ CFR 0.20% : 27 [current 6.40% ; growth 0.786%; underreporting 167x]
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Guessing for  Switzerland  the days until half of population gets infected.
-CFR 2.00% : 1473 [current 0.15% ; growth 0.017%; underreporting 3x]
-CFR 1.00% : 734 [current 0.31% ; growth 0.034%; underreporting 6x]
-CFR 0.50% : 365 [current 0.62% ; growth 0.068%; underreporting 13x]
-CFR 0.20% : 143 [current 1.55% ; growth 0.169%; underreporting 32x]
+CFR 2.00% : 2947 [current 0.15% ; growth 0.017%; underreporting 3x]
+CFR 1.00% : 1469 [current 0.31% ; growth 0.034%; underreporting 6x]
+CFR 0.50% : 730 [current 0.62% ; growth 0.068%; underreporting 13x]
+CFR 0.20% : 286 [current 1.55% ; growth 0.169%; underreporting 32x]
 </pre>
 </div>
 </div>
@@ -15175,10 +15175,10 @@ CFR 0.20% : 143 [current 1.55% ; growth 0.169%; underreporting 32x]
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Guessing for  Germany  the days until half of population gets infected.
-CFR 2.00% : 6684 [current 0.03% ; growth 0.004%; underreporting 1x]
-CFR 1.00% : 3340 [current 0.05% ; growth 0.007%; underreporting 3x]
-CFR 0.50% : 1668 [current 0.10% ; growth 0.015%; underreporting 6x]
-CFR 0.20% : 665 [current 0.26% ; growth 0.037%; underreporting 14x]
+CFR 2.00% : 13368 [current 0.03% ; growth 0.004%; underreporting 1x]
+CFR 1.00% : 6680 [current 0.05% ; growth 0.007%; underreporting 3x]
+CFR 0.50% : 3336 [current 0.10% ; growth 0.015%; underreporting 6x]
+CFR 0.20% : 1330 [current 0.26% ; growth 0.037%; underreporting 14x]
 </pre>
 </div>
 </div>
@@ -15287,10 +15287,10 @@ CFR 0.20% : 665 [current 0.26% ; growth 0.037%; underreporting 14x]
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Guessing for  US/Total  the days until half of population gets infected.
-CFR 2.00% : 5564 [current 0.03% ; growth 0.004%; underreporting 7x]
-CFR 1.00% : 2780 [current 0.06% ; growth 0.009%; underreporting 15x]
-CFR 0.50% : 1388 [current 0.12% ; growth 0.018%; underreporting 30x]
-CFR 0.20% : 553 [current 0.31% ; growth 0.045%; underreporting 74x]
+CFR 2.00% : 11128 [current 0.03% ; growth 0.004%; underreporting 7x]
+CFR 1.00% : 5560 [current 0.06% ; growth 0.009%; underreporting 15x]
+CFR 0.50% : 2777 [current 0.12% ; growth 0.018%; underreporting 30x]
+CFR 0.20% : 1106 [current 0.31% ; growth 0.045%; underreporting 74x]
 </pre>
 </div>
 </div>
@@ -15399,14 +15399,27 @@ CFR 0.20% : 553 [current 0.31% ; growth 0.045%; underreporting 74x]
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Guessing for  United Kingdom  the days until half of population gets infected.
-CFR 2.00% : 2422 [current 0.08% ; growth 0.010%; underreporting 19x]
-CFR 1.00% : 1209 [current 0.15% ; growth 0.021%; underreporting 38x]
-CFR 0.50% : 602 [current 0.31% ; growth 0.041%; underreporting 75x]
-CFR 0.20% : 238 [current 0.77% ; growth 0.103%; underreporting 188x]
+CFR 2.00% : 4845 [current 0.08% ; growth 0.010%; underreporting 19x]
+CFR 1.00% : 2419 [current 0.15% ; growth 0.021%; underreporting 38x]
+CFR 0.50% : 1205 [current 0.31% ; growth 0.041%; underreporting 75x]
+CFR 0.20% : 477 [current 0.77% ; growth 0.103%; underreporting 188x]
 </pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
 </div>
 </div>
 
